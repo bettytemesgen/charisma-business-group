@@ -1,0 +1,603 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="../bootstrap-4.0.0-dist/css/bootstrap.min.css"
+    />
+    <script
+      type="text/javascript"
+      src="../bootstrap-4.0.0-dist/js/bootstrap.min.js"
+    ></script>
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script> -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+    <link rel="stylesheet" href="../css/styles.css" />
+
+    <style>
+      /* * {
+                          box-sizing: border-box;
+                        }
+
+                        body {
+                          background-color: #f1f1f1;
+                          padding: 20px;
+                          font-family: Arial;
+                        }
+
+                        /* Center website */
+    </style>
+  </head>
+  <body>
+    <!-- Navbar Section -->
+
+    <nav class="navbar">
+      <div class="navbar__container">
+        <a href="#home" id="navbar__logo">
+          <div class="menu">
+            <img src="asset/Rectangle.png" alt="" />
+          </div>
+        </a>
+        <div class="navbar__toggle" id="mobile-menu">
+          <span class="bar" style="width: 1.2rem; margin-left: 0.5rem"></span>
+          <span class="bar" style="margin-left: -0.3rem; width: 2rem"></span>
+          <span class="bar" style="width: 1.2rem; margin-left: -0.2rem"></span>
+        </div>
+        <ul class="navbar__menu">
+          <li class="navbar__item">
+            <a href="./index.html" class="navbar__links" id="home-page">Home</a>
+          </li>
+          <li class="navbar__item">
+            <a href="./About.html" class="navbar__links" id="about-page"
+              >About Us</a
+            >
+          </li>
+          <li class="dropdown">
+            <a
+              href="#properties"
+              class="navbar__links nav-link dropdown-toggle"
+              id="services-page"
+              role="button"
+              data-toggle="dropdown"
+              aria-expanded="false"
+              >Properties</a
+            >
+            <div class="dropdown">
+              <div class="dropdown-content">
+                <a href="rent.html">Rent</a>
+                <a href="sale.html">Sale</a>
+              </div>
+            </div>
+          </li>
+          <li class="navbar__item">
+            <a href="ContactUs.html" class="navbar__links" id="services-page"
+              >contact us</a
+            >
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <!-- MAIN (Center website) -->
+    <!-- MAIN (Center website) -->
+    <div class="main" id="main-sale">
+      <img class="rents-line" src="asset/line2.png" alt="" />
+      <h1 class="Header">For Sale</h1>
+      <div id="myBtnContainer">
+        <div class="dropdown">
+          <button onclick="myFunction()" class="dropbtn">
+            <img src="asset/filter.png" alt="" />
+          </button>
+          <div id="myDropdown" class="dropdown-content">
+            <input
+              type="text"
+              placeholder="Search.."
+              id="myInput"
+              onkeyup="filterFunction()"
+            />
+            <div class="w3-dropdown-hover">
+              <a
+                href="#"
+                class="w3-bar-item w3-button btn"
+                onclick="filterSelection('Price')"
+                >Price
+              </a>
+              <a
+                href="#"
+                class="w3-bar-item w3-button btn"
+                onclick="filterSelection('Rent')"
+                >Rent</a
+              >
+
+              <a
+                href="#"
+                class="w3-bar-item w3-button btn"
+                onclick="filterSelection('Bedrooms')"
+                >Bedrooms</a
+              >
+            </div>
+          </div>
+        </div>
+        <button class="btn active" onclick="filterSelection('all')">
+          Show all
+        </button>
+
+        <!-- <button class="btn" onclick="filterSelection('nature')">Nature</button>
+
+        <button class="btn" onclick="filterSelection('cars')">Cars</button>
+        <button class="btn" onclick="filterSelection('people')">People</button> -->
+      </div>
+
+      <!-- Portfolio Gallery Grid -->
+      <div class="row">
+        <div class="column Price">
+          <div class="content">
+            <div>
+              <a href="./MiniDetail.html"
+                ><img
+                  src="asset/sale-buliding.png"
+                  alt="Mountains"
+                  style="width: 100%"
+              /></a>
+            </div>
+
+            <h1 class="img-header-bul">TWO BED ROOM APARTMENT</h1>
+            <p class="img-pargraph-bul">
+              104Sq Mt / Bedrooms: 2 / Baths: 2 / Maid’s room: 1 / Balcony: 2 /
+              Delivery period: 30 month
+            </p>
+            <a href="Viewdetails.html"
+              ><button class="btn-rows">
+                <p class="btns-paragraph">Details</p>
+              </button></a
+            >
+          </div>
+        </div>
+        <div class="column Price">
+          <div class="content">
+            <a href="./MiniDetail.html"
+              ><img
+                class="new-row-img"
+                src="asset/sale-buliding.png"
+                alt="Lights"
+                style="width: 100%"
+            /></a>
+            <img class="rent-img" src="asset/rent.png" alt="" />
+            <h1 class="img-header-bul">TWO BED ROOM APARTMENT</h1>
+            <p class="img-pargraph-bul">
+              104Sq Mt / Bedrooms: 2 / Baths: 2 / Maid’s room: 1 / Balcony: 2 /
+              Delivery period: 30 month
+            </p>
+            <a href="Viewdetails.html"
+              ><button class="btn-rows">
+                <p class="btns-paragraph">Details</p>
+              </button></a
+            >
+          </div>
+        </div>
+        <div class="column Price">
+          <div class="content">
+            <a href="./MiniDetail.html"
+              ><img
+                src="asset/sale-buliding.png"
+                alt="Nature"
+                style="width: 100%"
+            /></a>
+            <h1 class="img-header-bul">TWO BED ROOM APARTMENT</h1>
+            <p class="img-pargraph-bul">
+              104Sq Mt / Bedrooms: 2 / Baths: 2 / Maid’s room: 1 / Balcony: 2 /
+              Delivery period: 30 month
+            </p>
+            <a href="Viewdetails.html"
+              ><button class="btn-rows">
+                <p class="btns-paragraph">Details</p>
+              </button></a
+            >
+          </div>
+        </div>
+
+        <div class="column Rent">
+          <div class="content">
+            <a href="./MiniDetail.html"
+              ><img src="asset/sale-buliding.png" alt="Car" style="width: 100%"
+            /></a>
+            <h1 class="img-header-bul">TWO BED ROOM APARTMENT</h1>
+            <p class="img-pargraph-bul">
+              104Sq Mt / Bedrooms: 2 / Baths: 2 / Maid’s room: 1 / Balcony: 2 /
+              Delivery period: 30 month
+            </p>
+            <a href="Viewdetails.html"
+              ><button class="btn-rows">
+                <p class="btns-paragraph">Details</p>
+              </button></a
+            >
+          </div>
+        </div>
+        <div class="column Rent">
+          <div class="content">
+            <a href="./MiniDetail.html"
+              ><img
+                class="new-row-img"
+                src="asset/sale-buliding.png"
+                alt="Car"
+                style="width: 100%"
+            /></a>
+            <img class="rent-img" src="asset/rent.png" alt="" />
+            <h1 class="img-header-bul">TWO BED ROOM APARTMENT</h1>
+            <p class="img-pargraph-bul">
+              104Sq Mt / Bedrooms: 2 / Baths: 2 / Maid’s room: 1 / Balcony: 2 /
+              Delivery period: 30 month
+            </p>
+            <a href="Viewdetails.html"
+              ><button class="btn-rows">
+                <p class="btns-paragraph">Details</p>
+              </button></a
+            >
+          </div>
+        </div>
+        <div class="column Rent">
+          <div class="content">
+            <a href="./MiniDetail.html"
+              ><img src="asset/sale-buliding.png" alt="Car" style="width: 100%"
+            /></a>
+            <h1 class="img-header-bul">TWO BED ROOM APARTMENT</h1>
+            <p class="img-pargraph-bul">
+              104Sq Mt / Bedrooms: 2 / Baths: 2 / Maid’s room: 1 / Balcony: 2 /
+              Delivery period: 30 month
+            </p>
+            <a href="Viewdetails.html"
+              ><button class="btn-rows">
+                <p class="btns-paragraph">Details</p>
+              </button></a
+            >
+          </div>
+        </div>
+
+        <div class="column Bedrooms">
+          <div class="content">
+            <a href="./MiniDetail.html"
+              ><img src="asset/sale-buliding.png" alt="Car" style="width: 100%"
+            /></a>
+            <h1 class="img-header-bul">TWO BED ROOM APARTMENT</h1>
+            <p class="img-pargraph-bul">
+              104Sq Mt / Bedrooms: 2 / Baths: 2 / Maid’s room: 1 / Balcony: 2 /
+              Delivery period: 30 month
+            </p>
+            <a href="Viewdetails.html"
+              ><button class="btn-rows">
+                <p class="btns-paragraph">Details</p>
+              </button></a
+            >
+          </div>
+        </div>
+        <div class="column Bedrooms">
+          <div class="content">
+            <a href="./MiniDetail.html"
+              ><img
+                class="new-row-img"
+                src="asset/sale-buliding.png"
+                alt="Car"
+                style="width: 100%"
+            /></a>
+            <h1 class="img-header-bul">TWO BED ROOM APARTMENT</h1>
+            <p class="img-pargraph-bul">
+              104Sq Mt / Bedrooms: 2 / Baths: 2 / Maid’s room: 1 / Balcony: 2 /
+              Delivery period: 30 month
+            </p>
+            <a href="Viewdetails.html"
+              ><button class="btns">
+                <p class="btns-paragraph">Details</p>
+              </button></a
+            >
+          </div>
+        </div>
+        <div class="column Bedrooms">
+          <div class="content">
+            <a href="./MiniDetail.html"
+              ><img src="asset/sale-buliding.png" alt="Car" style="width: 100%"
+            /></a>
+            <h1 class="img-header-bul">TWO BED ROOM APARTMENT</h1>
+            <p class="img-pargraph-bul">
+              104Sq Mt / Bedrooms: 2 / Baths: 2 / Maid’s room: 1 / Balcony: 2 /
+              Delivery period: 30 month
+            </p>
+            <a href="Viewdetails.html"
+              ><button class="btn-rows">
+                <p class="btns-paragraph">Details</p>
+              </button></a
+            >
+          </div>
+        </div>
+        <!-- END GRID -->
+      </div>
+
+      <!-- END MAIN -->
+    </div>
+    <!--  -->
+    <!---============================Project=============================-->
+    <section>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-7">
+            <h1 class="project-header" id="proj-header-about">
+              Let’s Go On A <br />Project Together
+            </h1>
+          </div>
+        </div>
+      </div>
+
+      <div class="project-bk container-fluid">
+        <img class="line-arow" src="asset/line-arow.png" alt="" />
+
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6">
+              <img src="asset/build-img.png" alt="" class="imgs" />
+            </div>
+            <div
+              class="col-md-6 form-one"
+              style="background-image: url(asset/bulid-bk.png)"
+            >
+              <!-- form -->
+              <div class="contact-one">
+                <p>Name</p>
+
+                <input class="input2" type="text" name="name" />
+              </div>
+              <div class="contact-one">
+                <p>Email</p>
+
+                <input class="input2" type="text" name="name" />
+              </div>
+              <div class="contact-one">
+                <div class="form-group">
+                  <div class="mb-3">
+                    <label class="form-label" for="message">Message</label>
+                    <textarea
+                      class="form-control"
+                      id="message"
+                      type="text"
+                      placeholder="Message"
+                      style="height: 10rem"
+                    ></textarea>
+                  </div>
+                </div>
+              </div>
+
+              <div class="btn-div">
+                <button class="project-btn">
+                  <p class="btn-par">send message</p>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ==========buliding image only for moble view========== -->
+    <section>
+      <div class="container d-lg-none d-ms-none">
+        <div class="row">
+          <div class="col-md-4">
+            <img class="img-mobiles" src="asset/build-img.png" alt="" />
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Project and footer -->
+    <section>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <p></p>
+          </div>
+          <div class="col-md-6 par-top">
+            <p class="project-paragraph">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic
+              officiis nam laboriosam facere, nulla, reiciendis ut expedita
+              eligendi aperiam sunt facilis porro rem sint ratione molestias
+              repellendus aspernatur quis sit.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- footer -->
+    <div class="desktop-footer">
+      <section>
+        <div class="container">
+          <div class="row">
+            <div class="col-md-5">
+              <img class="footer-log" src="asset/Rectangle.png" alt="" />
+              <p class="footer-paragraph">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Faucibus lectus gravida ultrices lectus sodales ut massa, arcu
+                nunc. Fames eros metus.
+              </p>
+            </div>
+            <div class="col-md-3">
+              <ul class="footer-content-two">
+                <li class="list-one">Company</li>
+                <li class="list-two">About</li>
+
+                <li class="list-two">How it Works</li>
+
+                <li class="list-two">Terms</li>
+                <li>
+                  <a href="privacyPolicy.html" class="list-two"
+                    >Privay Policy</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <div class="col-md-2">
+              <ul class="footer-content-two">
+                <li class="list-one">More</li>
+                <li class="list-two">Documentaion</li>
+                <li class="list-two">License</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--=================== footer-social-medai=============== -->
+      <section>
+        <div class="container" id="footer-container">
+          <div class="row">
+            <div class="footer-social-media col-md-5">
+              <a href="#" class="fa fa-google icons"></a>
+              <a href="#" class="fa fa-twitter icons"></a>
+
+              <a href="#" class="fa fa-instagram icons"></a>
+
+              <a href="#" class="fa fa-linkedin icons"></a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+    <!-- ======================Mobile footer=========================== -->
+    <section>
+      <div class="mobile-footer d-lg-none">
+        <div class="container">
+          <div class="col-md-5">
+            <img class="footer-log" src="asset/Rectangle.png" alt="" />
+            <p class="footer-paragraph">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Faucibus
+              lectus gravida ultrices lectus sodales ut massa, arcu nunc. Fames
+              eros metus.
+            </p>
+          </div>
+          <div class="footer-social-media col-md-5">
+            <a href="#" class="fa fa-google icons"></a>
+            <a href="#" class="fa fa-twitter icons"></a>
+
+            <a href="#" class="fa fa-instagram icons"></a>
+
+            <a href="#" class="fa fa-linkedin icons"></a>
+          </div>
+        </div>
+        <div class="grid-container">
+          <div>
+            <ul class="footer-content-two">
+              <li class="list-one">Company</li>
+              <li class="list-two">About</li>
+
+              <li class="list-two">How it Works</li>
+
+              <li class="list-two">Terms</li>
+              <li>
+                <a href="privacyPolicy.html" class="list-two">Privay Policy</a>
+              </li>
+            </ul>
+          </div>
+          <div>
+            <ul class="footer-content-two">
+              <li class="list-one">More</li>
+              <li class="list-two">Documentaion</li>
+              <li class="list-two">License</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script src="app.js"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script> -->
+
+    <!--  -->
+    <script>
+      filterSelection("all");
+      function filterSelection(c) {
+        var x, i;
+        x = document.getElementsByClassName("column");
+        if (c == "all") c = "";
+        for (i = 0; i < x.length; i++) {
+          w3RemoveClass(x[i], "show");
+          if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+        }
+      }
+
+      function w3AddClass(element, name) {
+        var i, arr1, arr2;
+        arr1 = element.className.split(" ");
+        arr2 = name.split(" ");
+        for (i = 0; i < arr2.length; i++) {
+          if (arr1.indexOf(arr2[i]) == -1) {
+            element.className += " " + arr2[i];
+          }
+        }
+      }
+
+      function w3RemoveClass(element, name) {
+        var i, arr1, arr2;
+        arr1 = element.className.split(" ");
+        arr2 = name.split(" ");
+        for (i = 0; i < arr2.length; i++) {
+          while (arr1.indexOf(arr2[i]) > -1) {
+            arr1.splice(arr1.indexOf(arr2[i]), 1);
+          }
+        }
+        element.className = arr1.join(" ");
+      }
+
+      // Add active class to the current button (highlight it)
+      var btnContainer = document.getElementById("myBtnContainer");
+      var btns = btnContainer.getElementsByClassName("btn");
+      for (var i = 0; i < btns.length; i++) {
+        btns[i].addEventListener("click", function () {
+          var current = document.getElementsByClassName("active");
+          current[0].className = current[0].className.replace(" active", "");
+          this.className += " active";
+        });
+      }
+    </script>
+    <script>
+      /* When the user clicks on the button,
+  toggle between hiding and showing the dropdown content */
+      function myFunction() {
+        document.getElementById("myDropdown").classList.toggle("show");
+      }
+
+      function filterFunction() {
+        var input, filter, ul, li, a, i;
+        input = document.getElementById("myInput");
+        filter = input.value.toUpperCase();
+        div = document.getElementById("myDropdown");
+        a = div.getElementsByTagName("a");
+        for (i = 0; i < a.length; i++) {
+          txtValue = a[i].textContent || a[i].innerText;
+          if (txtValue.toUpperCase().indexOf(filter) > -1) {
+            a[i].style.display = "";
+          } else {
+            a[i].style.display = "none";
+          }
+        }
+      }
+    </script>
+    <script src="app.js"></script>
+  </body>
+</html>

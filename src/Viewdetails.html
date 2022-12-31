@@ -1,0 +1,609 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1"
+    />
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+    />
+    
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script> -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/less"></script>
+    
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" type="text/css" href="../css/styles.css" />
+
+    <title>view details</title>
+  </head>
+  <style>
+    .modal {
+    background:rgba(233, 233, 233, 0.6);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(px);
+    }
+     </style>
+  <body>
+    <!-- Navbar Section -->
+
+    <nav class="navbar">
+      <div class="navbar__container">
+        <a href="index.html" id="navbar__logo">
+          <div class="menu">
+            <img src="asset/rectangle.png" alt="" />
+          </div>
+        </a>
+        <div class="navbar__toggle" id="mobile-menu">
+          <span class="bar" style="width: 1.2rem; margin-left: 0.5rem"></span>
+          <span class="bar" style="margin-left: -0.3rem; width: 2rem"></span>
+          <span class="bar" style="width: 1.2rem; margin-left: -0.2rem"></span>
+        </div>
+        <ul class="navbar__menu">
+          <li class="navbar__item">
+            <a href="./index.html" class="navbar__links" id="home-page">Home</a>
+          </li>
+          <li class="navbar__item">
+            <a href="./about.html" class="navbar__links" id="about-page"
+              >About Us</a
+            >
+          </li>
+          <li class="dropdown leftprop">
+            <a
+              href="./realestate.html"
+              class="navbar__links nav-link dropdown-toggle"
+              id="services-page"
+              role="button"
+              data-toggle="dropdown"
+              aria-expanded="false"
+              >Properties</a
+            >
+            <div class="dropdown leftprop">
+              <div class="dropdown-content">
+                <a href="rent.html">Rent</a>
+                <a href="sale.html">Sale</a>
+              </div>
+            </div>
+          </li>
+          <li class="navbar__item">
+            <a href="contactus.html" class="navbar__links" id="services-page"
+              >contact us</a
+            >
+          </li>
+        </ul>
+      </div>
+    </nav>
+  
+     
+        <img class="main-background"  src="images/propDetails-image.png" alt=""  style="width: 100%; height: auto;"/>
+        <h1 class="headers">TWO BED ROOM APARTMENT</h1>
+      
+ 
+ <!-- ==================rooms============================== -->
+ <section>
+    <div class="container top">
+      
+      <div class="row">
+        <div class="col-md-6">
+          <img class="img-fluid map"  src="images/propDetails-map.png" alt="" />
+        </div>
+        <div class="col-md-6">
+          <p class="room-pargraph">
+            104Sq Mt / Bedrooms: 2 / Baths: 2 / Maid’s room: 1 / Balcony: 2 /
+            Delivery period: 30 month
+          </p>
+          <p class="room-paragraph-two">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia et
+            iusto quam corrupti earum voluptatum officiis fugiat magni ea
+            harum libero, dignissimos a, expedita, est dolores in corporis!
+            Perferendis, enim! enim!iusto quam corrupti earum voluptatum
+            officiis fugiat magni ea harum libero, dignissimos a, expedita,
+            est dolores in corporis! Perferendis, enim! enim!
+          </p>
+          <div>
+            <button class="prop-btn" data-toggle="modal" data-target="#myModal">
+              <p class="prop-btn-par">Book now</p>
+            </button>
+            <!-- <a href=""><button class="btn-download"><p class ="prop-btn-par">Download Pdf</p></button></a> -->
+            <a href ="images/propDetails-map.png" attributes-list download > 
+              <button class="btn-download"><p class ="prop-btn-par">Download Pdf</p></button>
+             </a> 
+            <!-- =========modal section ======= -->
+  
+              <form action ="" method="POST" enctype='multipart/form-data' id='modal' class ="modal-section">
+              <div class="modal fade" id="myModal" role="dialog">
+                <div class="modal-dialog modal-lg">
+                
+  
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    </div>
+                       
+                    <!-- =========modal section ======= -->
+                      <div class="modal-body">
+                            <div class = "row">
+                              <div class = "col-md-6 col-sm-12 none">
+                      <img src = "images/build-img.png" class="modal-image"/>  
+                      <div class = "book-now">Book Now</div> 
+                      <p class="modal-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                        Fringilla odio facilisi pellentesque ornare est pharetra proin eu. Magna porta
+                         faucibus tellus id risus gravida feugiat. Amet, laoreet ipsum netus sit molestie
+                          pellentesque. Nibh 
+                      </p>    
+                              </div>
+        <div class="col-md-6 col-sm-12">
+          <div style="display:flex; padding-bottom: 15px;"><img src="images/call.png" class="none"/>
+          <div class ="contact-number">+251 911 1223 336</div>
+        </div>
+          <div class ="show">
+            <div class = "book-now">Book Now</div> 
+                      <p class="modal-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                        Fringilla odio facilisi pellentesque ornare est pharetra proin eu. Magna porta
+                         faucibus tellus id risus gravida feugiat. Amet, laoreet ipsum netus sit molestie
+                          pellentesque. Nibh 
+                      </p>    
+                              </div>
+          <div style="background-image: url(images/bulid-bk.png)">
+                                      <!-- form -->
+                                      <form>
+                                  <div class="contact-modal">
+                        <p class="contact-information">Full Name</p>
+                           <input class="input2" type="text" name="name" placeholder="full name" required/>
+                                        </div>
+               <div class="contact-modal">
+                <p class="contact-information">Email</p>                           
+               <input class="input2" type="text" name="name"  placeholder="email" required/>
+                 </div>
+                <div class="contact-modal">
+                  <p class="contact-information">Phone Number</p>
+                   <input class="input2" type="text" name="name"  placeholder="+251912212323" required/>
+                    </div>
+               <div class="contact-modal">
+                <p class="contact-information">Date<span class ="time">Time</span></p>
+               <input class="date-input" type="date" name="name" required/>
+               <input class="date-input left" type="time" name="name" required/>
+                </div>                           
+                          <div class="contact-modal">
+                                    <div class="form-group">
+                                      <div class="mb-3">
+                                    <label class="form-label" for="message">Message</label>
+                                       <textarea
+                                          class="form-control"
+                                          id="message"
+                                          type="text"
+                                           placeholder="Message"
+                                         style="height: 8rem"
+                                         required></textarea>
+                                        </div>
+                                          </div>
+                                        </div>
+                          
+                 <div class="btn-div">
+                       <button class="boookNow-btn">
+                        <p class="btn-par">Book Now</p>
+                        </button>
+                         </div>
+                        </form>
+                        </div>
+                         </div>
+                          </div>
+                          </div>
+                           </div>
+                           </div>
+                            </div>                               
+                            </div>
+                  
+             <div class="modal-footer"> </div>
+             
+            </div>
+            
+            </div>
+            </div>
+                                   
+
+  </section>
+  <section>
+    <div>
+      <img class="img-curv" src="images/3dImage.png" alt="none" />
+    </div>
+  </section>
+    <!-- ======swiper====== -->
+    <div class="container top">
+    
+            <img  src="images/bar.png" alt="" />
+            <h1 class="Additional-view">Additional View</h1>
+            <div class="viewLine"> <img src="images/Line1.png" alt="" class="viewLineImage"/>
+            </div>
+           <div class="viewArrows">
+            <img src="asset/Apart-arow.png" alt="" id="prevAdditionalView" class="viewImages">
+            <img src="asset/Apart-arow2.png" alt="" id="nextAdditionalView" class="viewImages">
+           </div>
+            
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div>
+              <img
+                src="images/additiona-img.png"
+                alt=""
+                class="viewimage-one"
+              />
+              <h2 class="heading">Terrace</h2>
+              <div class="heading-text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Fringilla odio facilisi pellentesque ornare est pharetra proin
+                eu. Magna porta faucibus tellus id risus gravida
+              </div>
+              <button class="btn-details">
+                <p class="btn-home">Details</p>
+              </button>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div>
+              <img
+                src="images/additiona-img.png"
+                alt=""
+                style="width: 100%; height: auto; margin-top: 6.1rem; "
+              />
+              <h2 class="heading">Terrace</h2>
+              <div class="heading-text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Fringilla odio facilisi pellentesque ornare est pharetra proin
+                eu. Magna porta faucibus tellus id risus gravida
+              </div>
+              <button class="btn-details btn-bed">
+                <p class="btn-home">Details</p>
+              </button>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div>
+              <img
+                src="images/additiona-img.png"
+                alt=""
+                style="width: 100%; height: auto; margin-top: 6.1rem; "
+              />
+              <h2 class="heading">Terrace</h2>
+              <div class="heading-text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Fringilla odio facilisi pellentesque ornare est pharetra proin
+                eu. Magna porta faucibus tellus id risus gravida
+              </div>
+              <button class="btn-details btn-bed">
+                <p class="btn-home">Details</p>
+              </button>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div>
+              <img
+                src="images/additiona-img.png"
+                alt=""
+                style="width: 100%; height: auto; margin-top: 6.1rem; "
+              />
+              <h2 class="heading">Terrace</h2>
+              <div class="heading-text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Fringilla odio facilisi pellentesque ornare est pharetra proin
+                eu. Magna porta faucibus tellus id risus gravida
+              </div>
+              <button class="btn-details btn-bed">
+                <p class="btn-home">Details</p>
+              </button>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div>
+              <img
+                src="images/additiona-img.png"
+                alt=""
+                style="width: 100%; height: auto; margin-top: 6.1rem; "
+              />
+              <h2 class="heading">Terrace</h2>
+              <div class="heading-text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Fringilla odio facilisi pellentesque ornare est pharetra proin
+                eu. Magna porta faucibus tellus id risus gravida
+              </div>
+              <button class="btn-details btn-bed">
+                <p class="btn-home">Details</p>
+              </button>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div>
+              <img
+                src="images/additiona-img.png"
+                alt=""
+                style="width: 100%; height: auto; margin-top: 6.1rem; "
+              />
+              <h2 class="heading">Terrace</h2>
+              <div class="heading-text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Fringilla odio facilisi pellentesque ornare est pharetra proin
+                eu. Magna porta faucibus tellus id risus gravida
+              </div>
+              <button class="btn-details btn-bed">
+                <p class="btn-home">Details</p>
+              </button>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div>
+              <img
+                src="images/additiona-img.png"
+                alt=""
+                style="width: 100%; height: auto; margin-top: 6.1rem; "
+              />
+              <h2 class="heading">Terrace</h2>
+              <div class="heading-text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Fringilla odio facilisi pellentesque ornare est pharetra proin
+                eu. Magna porta faucibus tellus id risus gravida
+              </div>
+              <button class="btn-details btn-bed">
+                <p class="btn-home">Details</p>
+              </button>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div>
+              <img
+                src="images/additiona-img.png"
+                alt=""
+                style="width: 100%; height: auto; margin-top: 6.1rem; "
+              />
+              <h2 class="heading">Terrace</h2>
+              <div class="heading-text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Fringilla odio facilisi pellentesque ornare est pharetra proin
+                eu. Magna porta faucibus tellus id risus gravida
+              </div>
+              <button class="btn-details btn-bed">
+                <p class="btn-home">Details</p>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 3,
+        spaceBetween: 30,
+        breakpoints: {
+          300: {
+            slidesPerView: 1.4,
+            spaceBetween: 20,
+          },
+          767: {
+            slidesPerView: 2.4,
+            spaceBetween: 30,
+          },
+          992: {
+            slidesPerView: 3.5,
+            spaceBetween: 30,
+          },
+        },
+        freeMode: true,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+
+        navigation: {
+          nextEl: "#nextAdditionalView",
+          prevEl: "#prevAdditionalView",
+        },
+      });
+    </script>
+    <section>
+        <div class="container">
+          <div class="row">
+            <div class="col-md-7">
+              <h1 class="project-header">Let’s Go On A<br> Project Together</h1>
+            </div>
+          </div>
+        </div>
+      </section>
+      <div class="project-bk container-fluid">
+        <img class="line-arow" src="images/line-arow.png" alt="" />
+  
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6">
+              <img src="images/build-img.png" alt="" class="img-fluid imgs" />
+            </div>
+            <div
+              class="col-md-6 form-one"
+              style="background-image: url(images/bulid-bk.png)"
+            >
+              <!-- form -->
+              <div class="contact-one">
+                <p class="name">Name</p>
+  
+                <input class="input2" type="text" name="name" />
+              </div>
+              <div class="contact-one">
+                <p class="name">Email</p>
+  
+                <input class="input2" type="text" name="name" />
+              </div>
+              <div class="contact-one">
+                <div class="form-group">
+                  <div class="mb-3">
+                    <label class="form-label" for="message">Message</label>
+                    <textarea
+                      class="form-control"
+                      id="message"
+                      type="text"
+                      placeholder="Message"
+                      style="height: 10rem"
+                    ></textarea>
+                  </div>
+                </div>
+              </div>
+  
+              <div class="btn-div">
+                <button class="project-btn">
+                  <p class="btn-par">send message</p>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+        <!-- Project and footer -->
+    <section>
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6">
+              <p></p>
+            </div>
+            <div class="col-md-6 par-top">
+              <p class="project-paragraph">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic
+                officiis nam laboriosam facere, nulla, reiciendis ut expedita
+                eligendi aperiam sunt facilis porro rem sint ratione molestias
+                repellendus aspernatur quis sit.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- footer -->
+      <!-- footer -->
+  <div class="desktop-footer ">
+    <section>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-5">
+            <img class="footer-log" src="asset/Rectangle.png" alt="" />
+            <p class="footer-paragraph">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Faucibus
+              lectus gravida ultrices lectus sodales ut massa, arcu nunc. Fames
+              eros metus.
+            </p>
+          </div>
+          <div class="col-md-3">
+            <ul class="footer-content-two">
+              <li class="list-one">Company</li>
+              <li class="list-two">About</li>
+
+              <li class="list-two">How it Works</li>
+
+              <li class="list-two">Terms</li>
+              <li>
+                <a href="privacyPolicy.html" class="list-two">Privay Policy</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-2">
+            <ul class="footer-content-two">
+              <li class="list-one">More</li>
+              <li class="list-two">Documentaion</li>
+              <li class="list-two">License</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--=================== footer-social-medai=============== -->
+    <section>
+      <div class="container" id="footer-container">
+        <div class="row">
+          <div class="footer-social-media col-md-5">
+            <a href="#" class="fa fa-google icons"></a>
+            <a href="#" class="fa fa-twitter icons"></a>
+
+            <a href="#" class="fa fa-instagram icons"></a>
+
+            <a href="#" class="fa fa-linkedin icons"></a>
+          </div>
+        </div>
+      </div>
+    </section> 
+  </div>
+    <!-- ======================Mobile footer=========================== -->
+<section>
+  <div class="mobile-footer d-lg-none">
+  <div class="container">
+    <div class="col-md-5">
+      <img class="footer-log" src="asset/Rectangle.png" alt="" />
+      <p class="footer-paragraph">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Faucibus
+        lectus gravida ultrices lectus sodales ut massa, arcu nunc. Fames
+        eros metus.
+      </p>
+    </div>
+    <div class="footer-social-media col-md-5">
+      <a href="#" class="fa fa-google icons"></a>
+      <a href="#" class="fa fa-twitter icons"></a>
+
+      <a href="#" class="fa fa-instagram icons"></a>
+
+      <a href="#" class="fa fa-linkedin icons"></a>
+    </div>
+ 
+  </div>
+  <div class="grid-container">
+<div>
+    <ul class="footer-content-two">
+      <li class="list-one">Company</li>
+      <li class="list-two">About</li>
+
+      <li class="list-two">How it Works</li>
+
+      <li class="list-two">Terms</li>
+      <li>
+        <a href="privacyPolicy.html" class="list-two">Privay Policy</a>
+      </li>
+    </ul></div>
+     <div>
+      <ul class="footer-content-two">
+        <li class="list-one">More</li>
+        <li class="list-two">Documentaion</li>
+        <li class="list-two">License</li>
+      </ul>
+     </div>
+</div>
+  </div>
+</section>
+<scipt>
+ 
+</scipt>
+   <script src="app.js"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script> -->
+  </body>
+</html>

@@ -1,0 +1,89 @@
+#new-test-class .section {
+  display: grid;
+  place-items: center;
+  height: 100vh;
+}
+#new-test-class .section-header {
+  position: relative;
+  padding-bottom: 10px;
+  text-align: center;
+  font-weight: 900;
+  padding-bottom: 25px;
+  color: #fff;
+}
+#new-test-class .section-header:after {
+  content: "";
+  height: 3px;
+  width: 200px;
+  position: absolute;
+  bottom: 0;
+  left: calc(50% - 100px);
+  background: #fff;
+}
+#new-test-class .section-header span {
+  display: block;
+  font-size: 15px;
+  font-weight: 300;
+}
+#new-test-class .testimonials {
+  max-width: 1000px;
+  padding: 0 15px 50px;
+  margin: 0 auto 80px auto;
+}
+#new-test-class .single-item {
+  background: #fff;
+  color: #111;
+  padding: 15px;
+  margin: 50px 15px;
+}
+#new-test-class .profile {
+  margin-bottom: 30px;
+  text-align: center;
+}
+#new-test-class .img-area {
+  margin: 0 15px 15px 15px;
+}
+#new-test-class .img-area img {
+  height: 200px;
+  width: 200px;
+  border-radius: 50%;
+  border: 7px solid transparent;
+}
+#new-test-class .content {
+  font-size: 18px;
+}
+#new-test-class .content p {
+  text-align: justify;
+}
+#new-test-class .content p span {
+  font-size: 48px;
+  margin-right: 20px;
+  color: blueviolet;
+}
+#new-test-class .socials i {
+  margin-right: 25px;
+}
+#new-test-class .bio h4 {
+  font-family: "Berkshire Swash", cursive;
+}
+#new-test-class .carousel-control-next-icon,
+#new-test-class .carousel-control-prev-icon {
+  background-color: red;
+}
+#new-test-class .carousel-control-prev {
+  left: 0;
+  border-color: transparent;
+  /* color: transparent; */
+  background-color: transparent;
+}
+#new-test-class .carousel-control-next {
+  border-color: transparent;
+}
+#new-test-class .carousel-control-prev {
+  left: 0;
+  border-color: transparent;
+  background-color: transparent;
+}
+#new-test-class .row {
+  margin: 9px -104px;
+}

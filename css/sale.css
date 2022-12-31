@@ -1,0 +1,130 @@
+#main-sale {
+  /* Add padding BETWEEN each column */
+  /* Create three equal columns that floats next to each other */
+  /* Clear floats after rows */
+  /* Content */
+  /* The "show" class is added to the filtered elements */
+  /* Style the buttons */
+  /* .btn {
+                    background-color: #666;
+                  } */
+}
+#main-sale .main {
+  max-width: 1000px;
+  margin: auto;
+}
+#main-sale .row {
+  margin: 10px -16px;
+}
+#main-sale .row,
+#main-sale .row > .column {
+  padding: 8px;
+}
+#main-sale .column {
+  float: left;
+  width: 33.33%;
+  display: none;
+  /* Hide all elements by default */
+}
+#main-sale .row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+#main-sale .content {
+  background-color: transparent;
+  padding: 10px;
+}
+#main-sale .show {
+  display: block;
+}
+#main-sale .btn-rows {
+  border: none;
+  outline: none;
+  padding: 7px 39px 0px 39px;
+  border-color: transparent;
+  padding: 15px 65px 0px 60px;
+  background: linear-gradient(98.03deg, #be9230 -6.86%, #deb65d 30.02%, #daa839 113.9%, #daa839 113.92%, #daa93d 113.93%);
+  box-shadow: 0px 10px 15px rgba(218, 168, 57, 0.27);
+}
+#main-sale .btn-rows:hover {
+  background-color: transparent;
+}
+#main-sale .btn-rows.active {
+  background-color: #666;
+  color: white;
+  padding: 1rem 2rem;
+}
+#main-sale .dropbtn {
+  background-color: transparent;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+#main-sale .dropbtn:hover {
+  background-color: #666;
+}
+#main-sale #myInput {
+  box-sizing: border-box;
+  background-image: url("searchicon.png");
+  background-position: 14px 12px;
+  background-repeat: no-repeat;
+  font-size: 16px;
+  padding: 14px 20px 12px 45px;
+  border: none;
+  border-bottom: 1px solid #ddd;
+}
+#main-sale #myInput:focus {
+  outline: 3px solid #ddd;
+}
+#main-sale .dropdown {
+  position: relative;
+  display: inline-block;
+}
+#main-sale .dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: white;
+  min-width: 230px;
+  overflow: auto;
+  border: 1px solid transparent;
+  z-index: 1;
+}
+#main-sale .dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+#main-sale .dropdown a:hover {
+  background-color: #ddd;
+}
+#main-sale .show {
+  display: block;
+}
+#main-sale .new-row-img {
+  padding-top: 6rem;
+}
+#main-sale .rent-img {
+  margin-top: -29.6rem;
+}
+#main-sale .rents-line {
+  width: 5rem;
+  height: 0.4rem;
+  margin-top: 4rem;
+}
+@media screen and (max-width: 960px) {
+  #main-sale .column {
+    float: left;
+    width: 50%;
+  }
+  #main-sale .new-row-img {
+    padding-top: 0rem;
+  }
+  #main-sale .rent-img {
+    margin-top: -15.6rem;
+    width: 8rem;
+  }
+}

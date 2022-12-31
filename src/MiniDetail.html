@@ -1,0 +1,920 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+    />
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script> -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/less"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" type="text/css" href="../css/styles.css" />
+
+    <title>Properties</title>
+    <style>
+      .card {
+        background-color: transparent;
+      }
+
+      .main {
+        max-width: 1000px;
+        margin: auto;
+      }
+
+      h1 {
+        font-size: 50px;
+        word-break: break-all;
+      }
+
+      .row {
+        margin: 10px -16px;
+      }
+
+      /* Add padding BETWEEN each column */
+      .row,
+      .row > .column {
+        padding: 8px;
+      }
+
+      /* Create three equal columns that floats next to each other */
+      .column {
+        float: left;
+        width: 33.33%;
+        display: none; /* Hide all elements by default */
+      }
+
+      /* Clear floats after rows */
+      .row:after {
+        content: "";
+        display: table;
+        clear: both;
+      }
+
+      /* Content */
+      .content {
+        background-color: transparent;
+        padding: 10px;
+      }
+
+      /* The "show" class is added to the filtered elements */
+      .show {
+        display: block;
+      }
+
+      /* Style the buttons */
+      .btn {
+        border: none;
+        outline: none;
+        padding: 12px 16px;
+        background-color: transparent;
+        cursor: pointer;
+        color: white;
+      }
+
+      .btn:hover {
+        /* background-color: white; */
+      }
+
+      .btn.active {
+        background-color: #666;
+        color: white;
+      }
+      /*  */
+      .img-header-bul {
+        font-family: "Poppins";
+        font-style: normal;
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 28px;
+        /* identical to box height, or 140% */
+
+        color: #ffffff;
+      }
+      .img-pargraph-bul {
+        font-family: "Poppins";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 28px;
+        /* or 140% */
+
+        color: #e5e5e5;
+      }
+      .btns {
+        border-color: transparent;
+        padding: 0.8rem 4rem;
+        background: linear-gradient(
+          98.03deg,
+          #be9230 -6.86%,
+          #deb65d 30.02%,
+          #daa839 113.9%,
+          #daa839 113.92%,
+          #daa93d 113.93%
+        );
+        box-shadow: 0px 10px 15px rgb(218 168 57 / 27%);
+      }
+
+      .btns-paragraph {
+        color: white;
+      }
+      .img-rent-blus {
+        margin-top: -27.8rem;
+      }
+      .img-pad {
+        margin-top: 2rem;
+      }
+      .rents-line {
+        width: 5rem;
+        height: 0.2rem;
+        margin-top: 4rem;
+      }
+      .desktop-view-rent-header {
+        margin-left: 10rem;
+      }
+      .properties-image2 {
+        margin-inline: -2rem;
+      }
+      @media screen and (max-width: 960px) {
+        .properties-image2 {
+          margin-inline: 0rem;
+        }
+        .column {
+          width: 50%;
+        }
+        .desktop-view-rent-header {
+          margin-left: 0rem;
+        }
+        .img-pad {
+          margin-top: 0rem;
+        }
+        .img-rent-blus {
+          width: 8rem;
+          margin-top: -16rem;
+        }
+        #myBtnContainer {
+          margin-left: 1rem;
+        }
+        .img-header-bul {
+          font-size: 12;
+        }
+        .img-pargraph-bul {
+          font-size: 14;
+        }
+        .btns {
+          padding: 7px 39px 0px 39px;
+        }
+        #proj-header-sale {
+          margin-top: 1rem;
+        }
+        #new-sold-img {
+          margin-top: -34rem;
+          width: 7rem;
+        }
+      }
+      /* @media screen and (max-width: 960px) {
+        .solds-img {
+    width: 8rem;
+    margin-top: -32rem;}} */
+      .solds-img {
+        margin-top: -53.1rem;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Navbar Section -->
+    <!-- Navbar Section -->
+
+    <nav class="navbar">
+      <div class="navbar__container">
+        <a href="index.html" id="navbar__logo">
+          <div class="menu">
+            <img src="asset/rectangle.png" alt="" />
+          </div>
+        </a>
+        <div class="navbar__toggle" id="mobile-menu">
+          <span class="bar" style="width: 1.2rem; margin-left: 0.5rem"></span>
+          <span class="bar" style="margin-left: -0.3rem; width: 2rem"></span>
+          <span class="bar" style="width: 1.2rem; margin-left: -0.2rem"></span>
+        </div>
+        <ul class="navbar__menu">
+          <li class="navbar__item">
+            <a href="./index.html" class="navbar__links" id="home-page">Home</a>
+          </li>
+          <li class="navbar__item">
+            <a href="./about.html" class="navbar__links" id="about-page"
+              >About Us</a
+            >
+          </li>
+          <li class="dropdown">
+            <a
+              href="./realestate.html"
+              class="navbar__links nav-link dropdown-toggle"
+              id="services-page"
+              role="button"
+              data-toggle="dropdown"
+              aria-expanded="false"
+              >Properties</a
+            >
+            <div class="dropdown leftprop">
+              <div class="dropdown-content">
+                <a href="rent.html">Rent</a>
+                <a href="sale.html">Sale</a>
+              </div>
+            </div>
+          </li>
+          <li class="navbar__item">
+            <a href="contactus.html" class="navbar__links" id="services-page"
+              >contact us</a
+            >
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <!--  -->
+    <!-- <div class="container">
+      <div class="row top">
+        <div class="col-md-12">
+          <div><img src="images/bar.png" class="bar" /></div>
+          <p class="Properties">For Sale</p>
+          <div class="" style="display: flex">
+            <div class="filter">Filter</div>
+            <img src="images/filter.png" />
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container color">
+      <div class="row top">
+        <div class="col-sm-4 col-xs-12">
+          <img
+            src="images/properties-four.png"
+            class="img-fluid properties-image1"
+            alt=""
+          />
+        </div>
+        <div class="col-sm-8 col-xs-12">
+          <div class="bedRoom">TWO BED ROOM APARTMENT</div>
+          <p class="balcony">
+            104Sq Mt / Bedrooms: 2 / Baths: 2 / Maid’s
+            <br />
+            room: 1 / Balcony: 2 / Delivery period: 30 <br />month
+          </p>
+          <p class="text-properties">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fringilla
+            odio facilisi pellentesque ornare est pharetra proin eu. Magna porta
+            faucibus tellus id risus gravida feugiat. Amet, laoreet ipsum netus
+            sit molestie pellentesque. Nibh commodo dolor nunc lectus ornare
+            elit. Convallis volutpat eu nibh facilisi ipsum. Eros eu id pulvinar
+            turpis. Volutpat nunc scelerisque cursus orci, ac varius
+            pellentesque. Sem et egestas diam proin cras placerat pharetra.
+            Accumsan sed consequat urna, auctor risus elementum leo aliquam.
+            Blandit molestie posuere ipsum consectetur quam morbi tortor et
+            ornare.
+          </p>
+          <div class="row">
+            <div class="col-md-4">
+              <img
+                src="images/properties-image2.png"
+                class="properties-image2"
+              />
+            </div>
+            <div class="" style="display: flex; gap: 15px">
+              <div class="">
+                <a href="viewdetails.html">
+                  <button class="btn-view"><p class="btn-pdf">View</p></button>
+                </a>
+              </div>
+              <div class="download">
+                <a href=""
+                  ><button class="btn-download">
+                    <p class="prop-btn-par">Download Pdf</p>
+                  </button></a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div> -->
+
+    <div class="main" id="main-sale">
+      <img class="rents-line" src="asset/line2.png" alt="" />
+      <h1 class="Header">For Sale</h1>
+
+      <div id="myBtnContainer">
+        <div class="dropdown">
+          <button onclick="myFunction()" class="dropbtn">
+            <img src="asset/filter.png" alt="" />
+          </button>
+          <div id="myDropdown" class="dropdown-content">
+            <input
+              type="text"
+              placeholder="Search.."
+              id="myInput"
+              onkeyup="filterFunction()"
+            />
+            <div class="w3-dropdown-hover">
+              <a
+                href="#"
+                class="w3-bar-item w3-button btn"
+                onclick="filterSelection('Price')"
+                >Price
+              </a>
+              <a
+                href="#"
+                class="w3-bar-item w3-button btn"
+                onclick="filterSelection('Rent')"
+                >Rent</a
+              >
+
+              <a
+                href="#"
+                class="w3-bar-item w3-button btn"
+                onclick="filterSelection('Bedrooms')"
+                >Bedrooms</a
+              >
+            </div>
+          </div>
+        </div>
+        <button class="btn active" onclick="filterSelection('all')">
+          Show all
+        </button>
+      </div>
+      <!--  -->
+      <div class="container">
+        <!-- <div class="row top">
+          <div class="col-md-12">
+            <div><img src="images/bar.png" class="bar" /></div>
+            <p class="Properties">For Sale</p>
+            <div class="" style="display: flex">
+              <div class="filter">Filter</div>
+              <img src="images/filter.png" />
+            </div>
+          </div>
+        </div> -->
+      </div>
+      <div class="container color">
+        <div class="row top">
+          <div class="col-sm-4 col-xs-12">
+            <img
+              src="images/properties-four.png"
+              class="img-fluid properties-image1"
+              alt=""
+            />
+          </div>
+          <div class="col-sm-8 col-xs-12">
+            <div class="bedRoom">TWO BED ROOM APARTMENT</div>
+            <p class="balcony">
+              104Sq Mt / Bedrooms: 2 / Baths: 2 / Maid’s
+              <br />
+              room: 1 / Balcony: 2 / Delivery period: 30 <br />month
+            </p>
+            <p class="text-properties">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fringilla
+              odio facilisi pellentesque ornare est pharetra proin eu. Magna
+              porta faucibus tellus id risus gravida feugiat. Amet, laoreet
+              ipsum netus sit molestie pellentesque. Nibh commodo dolor nunc
+              lectus ornare elit. Convallis volutpat eu nibh facilisi ipsum.
+              Eros eu id pulvinar turpis. Volutpat nunc scelerisque cursus orci,
+              ac varius pellentesque. Sem et egestas diam proin cras placerat
+              pharetra. Accumsan sed consequat urna, auctor risus elementum leo
+              aliquam. Blandit molestie posuere ipsum consectetur quam morbi
+              tortor et ornare.
+            </p>
+            <div class="row">
+              <div class="col-md-4">
+                <img
+                  src="images/properties-image2.png"
+                  class="properties-image2"
+                />
+              </div>
+              <div class="" style="display: flex; gap: 15px">
+                <div class="">
+                  <a href="viewdetails.html">
+                    <button class="btn-view">
+                      <p class="btn-pdf">View</p>
+                    </button>
+                  </a>
+                </div>
+                <div class="download">
+                  <a href="images/propDetails-map.png" attributes-list download
+                    ><button class="btn-download">
+                      <p class="prop-btn-par">Download Pdf</p>
+                    </button>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Portfolio Gallery Grid -->
+      <div class="row">
+        <div class="column Price">
+          <div class="content">
+            <div>
+              <a href="./MiniDetail.html"
+                ><img
+                  src="asset/sale-buliding.png"
+                  alt="Mountains"
+                  style="width: 100%"
+              /></a>
+            </div>
+
+            <h1 class="img-header-bul">TWO BED ROOM APARTMENT</h1>
+            <p class="img-pargraph-bul">
+              104Sq Mt / Bedrooms: 2 / Baths: 2 / Maid’s room: 1 / Balcony: 2 /
+              Delivery period: 30 month
+            </p>
+            <a href="Viewdetails.html"
+              ><button class="btn-rows">
+                <p class="btns-paragraph">Details</p>
+              </button></a
+            >
+          </div>
+        </div>
+        <div class="column Price">
+          <div class="content">
+            <a href="./MiniDetail.html"
+              ><img
+                class="new-row-img"
+                src="asset/sale-buliding.png"
+                alt="Lights"
+                style="width: 100%"
+            /></a>
+            <img
+              class="solds-img"
+              src="asset/sold.png"
+              alt=""
+              id="new-sold-img"
+            />
+            <h1 class="img-header-bul">TWO BED ROOM APARTMENT</h1>
+            <p class="img-pargraph-bul">
+              104Sq Mt / Bedrooms: 2 / Baths: 2 / Maid’s room: 1 / Balcony: 2 /
+              Delivery period: 30 month
+            </p>
+            <a href="Viewdetails.html"
+              ><button class="btn-rows">
+                <p class="btns-paragraph">Details</p>
+              </button></a
+            >
+          </div>
+        </div>
+        <div class="column Price">
+          <div class="content">
+            <a href="./MiniDetail.html"
+              ><img
+                src="asset/sale-buliding.png"
+                alt="Nature"
+                style="width: 100%"
+            /></a>
+            <h1 class="img-header-bul">TWO BED ROOM APARTMENT</h1>
+            <p class="img-pargraph-bul">
+              104Sq Mt / Bedrooms: 2 / Baths: 2 / Maid’s room: 1 / Balcony: 2 /
+              Delivery period: 30 month
+            </p>
+            <button class="btns"><p class="btns-paragraph">Details</p></button>
+          </div>
+        </div>
+
+        <div class="column Rent">
+          <div class="content">
+            <a href="./MiniDetail.html"
+              ><img src="asset/sale-buliding.png" alt="Car" style="width: 100%"
+            /></a>
+            <img
+              class="solds-img"
+              src="asset/sold.png"
+              alt=""
+              id="new-sold-img"
+            />
+
+            <h1 class="img-header-bul">TWO BED ROOM APARTMENT</h1>
+            <p class="img-pargraph-bul">
+              104Sq Mt / Bedrooms: 2 / Baths: 2 / Maid’s room: 1 / Balcony: 2 /
+              Delivery period: 30 month
+            </p>
+            <button class="btns"><p class="btns-paragraph">Details</p></button>
+          </div>
+        </div>
+        <div class="column Rent">
+          <div class="content">
+            <a href="./MiniDetail.html"
+              ><img
+                class="new-row-img"
+                src="asset/sale-buliding.png"
+                alt="Car"
+                style="width: 100%"
+            /></a>
+            <h1 class="img-header-bul">TWO BED ROOM APARTMENT</h1>
+            <p class="img-pargraph-bul">
+              104Sq Mt / Bedrooms: 2 / Baths: 2 / Maid’s room: 1 / Balcony: 2 /
+              Delivery period: 30 month
+            </p>
+            <button class="btns"><p class="btns-paragraph">Details</p></button>
+          </div>
+        </div>
+        <div class="column Rent">
+          <div class="content">
+            <a href="./MiniDetail.html"
+              ><img src="asset/sale-buliding.png" alt="Car" style="width: 100%"
+            /></a>
+            <h1 class="img-header-bul">TWO BED ROOM APARTMENT</h1>
+            <p class="img-pargraph-bul">
+              104Sq Mt / Bedrooms: 2 / Baths: 2 / Maid’s room: 1 / Balcony: 2 /
+              Delivery period: 30 month
+            </p>
+            <button class="btns"><p class="btns-paragraph">Details</p></button>
+          </div>
+        </div>
+
+        <!-- <div class="column Bedrooms">
+          <div class="content">
+            <a href="./MiniDetail.html"
+              ><img src="asset/sale-buliding.png" alt="Car" style="width: 100%"
+            /></a>
+            <h1 class="img-header-bul">TWO BED ROOM APARTMENT</h1>
+            <p class="img-pargraph-bul">
+              104Sq Mt / Bedrooms: 2 / Baths: 2 / Maid’s room: 1 / Balcony: 2 /
+              Delivery period: 30 month
+            </p>
+            <button class="btns"><p class="btns-paragraph">Details</p></button>
+          </div>
+        </div>
+        <div class="column Bedrooms">
+          <div class="content">
+            <a href="./MiniDetail.html"
+              ><img
+                class="new-row-img"
+                src="asset/sale-buliding.png"
+                alt="Car"
+                style="width: 100%"
+            /></a>
+            <h1 class="img-header-bul">TWO BED ROOM APARTMENT</h1>
+            <p class="img-pargraph-bul">
+              104Sq Mt / Bedrooms: 2 / Baths: 2 / Maid’s room: 1 / Balcony: 2 /
+              Delivery period: 30 month
+            </p>
+            <button class="btns"><p class="btns-paragraph">Details</p></button>
+          </div>
+        </div>
+        <div class="column Bedrooms">
+          <div class="content">
+            <a href="./MiniDetail.html"
+              ><img src="asset/sale-buliding.png" alt="Car" style="width: 100%"
+            /></a>
+            <h1 class="img-header-bul">TWO BED ROOM APARTMENT</h1>
+            <p class="img-pargraph-bul">
+              104Sq Mt / Bedrooms: 2 / Baths: 2 / Maid’s room: 1 / Balcony: 2 /
+              Delivery period: 30 month
+            </p>
+            <button class="btns"><p class="btns-paragraph">Details</p></button>
+          </div>
+        </div>
+        <!-- END GRID -->
+      </div>
+
+      <!-- END MAIN -->
+    </div>
+    <!-- ============================for Sale coloum One=================================== -->
+    <!-- <section id="Rent-container">
+       
+          <div class="container column-one">
+            <div class="row">
+              <div class="col-md-4 col-sm-6">
+                <img src="images/properties-four.png" class="img-fluid img-one" alt="" />
+                <h1 class="img-header">TWO BED ROOM APARTMENT</h1>
+                <p class="img-pargraph">
+                  104Sq Mt / Bedrooms: 2 / Baths: 2 / Maid’s room: 1 / Balcony: 2 /
+                  Delivery period: 30 month
+                </p>
+                <button class="btn-details"><p class="btn-paragraph">Details</p></button>
+              </div>
+              <div class="col-md-4 col-sm-6 second">
+                <button class="btn-sold"><p class="btn-home">Sold</p></button>
+                <img src="images/properties-four.png" class="img-fluid img-two" alt="" />
+                <h1 class="img-header">TWO BED ROOM APARTMENT</h1>
+                <p class="img-pargraph">
+                  104Sq Mt / Bedrooms: 2 / Baths: 2 / Maid’s room: 1 / Balcony: 2 /
+                  Delivery period: 30 month
+                </p>
+                <button class="btn-details"><p class="btn-paragraph">Details</p></button>
+              </div>
+              <div class="col-md-4 col-sm-6">
+                <img src="images/properties-four.png" class="img-fluid img-three" alt="" />
+                <h1 class="img-header">TWO BED ROOM APARTMENT</h1>
+                <p class="img-pargraph">
+                  104Sq Mt / Bedrooms: 2 / Baths: 2 / Maid’s room: 1 / Balcony: 2 /
+                  Delivery period: 30 month
+                </p>
+                <button class="btn-details"><p class="btn-paragraph">Details</p></button>
+              </div>
+            </div>
+          </div>
+        </section> -->
+
+    <!-- ============================for Sale coloum Two=================================== -->
+    <!-- <section id="Rent-container">
+          <div class="container column-two">
+            <div class="row">
+              <div class="col-md-4 col-sm-6">
+                <button class="btn-sold"><p class="btn-home">Sold</p></button>
+                <img src="images/properties-four.png" class="img-fluid img-one" alt="" />
+                <h1 class="img-header">TWO BED ROOM APARTMENT</h1>
+                <p class="img-pargraph">
+                  104Sq Mt / Bedrooms: 2 / Baths: 2 / Maid’s room: 1 / Balcony: 2 /
+                  Delivery period: 30 month
+                </p>
+                <button class="btn-details"><p class="btn-paragraph">Details</p></button>
+              </div>
+              <div class="col-md-4 col-sm-6 two">
+                <img src="images/properties-four.png" class="img-fluid img-two" alt="" />
+                <h1 class="img-header">TWO BED ROOM APARTMENT</h1>
+                <p class="img-pargraph">
+                  104Sq Mt / Bedrooms: 2 / Baths: 2 / Maid’s room: 1 / Balcony: 2 /
+                  Delivery period: 30 month
+                </p>
+                <button class="btn-details"><p class="btn-paragraph">Details</p></button>
+              </div>
+              <div class="col-md-4 col-sm-6 three">
+                <img src="images/properties-four.png" class="img-fluid img-threeSecond" alt="" />
+                <h1 class="img-header">TWO BED ROOM APARTMENT</h1>
+                <p class="img-pargraph">
+                  104Sq Mt / Bedrooms: 2 / Baths: 2 / Maid’s room: 1 / Balcony: 2 /
+                  Delivery period: 30 month
+                </p>
+                <button class="btn-details"><p class="btn-paragraph">Details</p></button>
+              </div>
+            </div>
+          </div>
+        </section> -->
+    <!---============================Project=============================-->
+    <section>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-7">
+            <h1 class="project-header">Let’s Go On A <br />Project Together</h1>
+          </div>
+        </div>
+      </div>
+
+      <div class="project-bk container-fluid">
+        <img class="line-arow" src="asset/line-arow.png" alt="" />
+        <form action="" method="POST" enctype="multipart/form-data">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-6">
+                <img src="asset/build-img.png" alt="" class="imgs" />
+              </div>
+
+              <div
+                class="col-md-6 form-one"
+                style="background-image: url(asset/bulid-bk.png)"
+              >
+                <!-- form -->
+                <div class="contact-one">
+                  <p>Name</p>
+
+                  <input class="input2" type="text" name="name" required />
+                </div>
+                <div class="contact-one">
+                  <p>Email</p>
+
+                  <input class="input2" type="text" name="name" required />
+                </div>
+                <div class="contact-one">
+                  <div class="form-group">
+                    <div class="mb-3">
+                      <label class="form-label" for="message">Message</label>
+                      <textarea
+                        class="form-control"
+                        id="message"
+                        type="text"
+                        placeholder="Message"
+                        style="height: 10rem"
+                      ></textarea>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="btn-div">
+                  <button type="submit" class="project-btn">
+                    <p class="btn-par">send message</p>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <!-- Project and footer -->
+    <section>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <p></p>
+          </div>
+          <div class="col-md-6 par-top">
+            <p class="project-paragraph">
+              As a trusted general project that has beenoperating for 25 <br />
+              years, our commitment is always to prioritize our client<br />
+              satisfaction
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- footer -->
+    <div class="desktop-footer">
+      <section>
+        <div class="container">
+          <div class="row">
+            <div class="col-md-5">
+              <img class="footer-log" src="asset/rectangle.png" alt="" />
+              <p class="footer-paragraph">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Faucibus lectus gravida ultrices lectus sodales ut massa, arcu
+                nunc. Fames eros metus.
+              </p>
+            </div>
+            <div class="col-md-3">
+              <ul class="footer-content-two">
+                <li class="list-one">Company</li>
+                <li class="list-two">About</li>
+
+                <li class="list-two">How it Works</li>
+
+                <li class="list-two">Terms</li>
+                <li>
+                  <a href="privacypolicy.html" class="list-two"
+                    >Privay Policy</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <div class="col-md-2">
+              <ul class="footer-content-two">
+                <li class="list-one">More</li>
+                <li class="list-two">Documentaion</li>
+                <li class="list-two">License</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--=================== footer-social-medai=============== -->
+      <section>
+        <div class="container" id="footer-container">
+          <div class="row">
+            <div class="footer-social-media col-md-5">
+              <a href="#" class="fa fa-google icons"></a>
+              <a href="#" class="fa fa-twitter icons"></a>
+
+              <a href="#" class="fa fa-instagram icons"></a>
+
+              <a href="#" class="fa fa-linkedin icons"></a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+    <!-- ======================Mobile footer=========================== -->
+    <section>
+      <div class="mobile-footer d-lg-none">
+        <div class="container">
+          <div class="col-md-5">
+            <img class="footer-log" src="asset/rectangle.png" alt="" />
+            <p class="footer-paragraph">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Faucibus
+              lectus gravida ultrices lectus sodales ut massa, arcu nunc. Fames
+              eros metus.
+            </p>
+          </div>
+          <div class="footer-social-media col-md-5">
+            <a href="#" class="fa fa-google icons"></a>
+            <a href="#" class="fa fa-twitter icons"></a>
+
+            <a href="#" class="fa fa-instagram icons"></a>
+
+            <a href="#" class="fa fa-linkedin icons"></a>
+          </div>
+        </div>
+        <div class="grid-container">
+          <div>
+            <ul class="footer-content-two">
+              <li class="list-one">Company</li>
+              <li class="list-two">About</li>
+
+              <li class="list-two">How it Works</li>
+
+              <li class="list-two">Terms</li>
+              <li>
+                <a href="privacypolicy.html" class="list-two">Privay Policy</a>
+              </li>
+            </ul>
+          </div>
+          <div>
+            <ul class="footer-content-two">
+              <li class="list-one">More</li>
+              <li class="list-two">Documentaion</li>
+              <li class="list-two">License</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script src="app.js"></script>
+    <script>
+      filterSelection("all");
+      function filterSelection(c) {
+        var x, i;
+        x = document.getElementsByClassName("column");
+        if (c == "all") c = "";
+        for (i = 0; i < x.length; i++) {
+          w3RemoveClass(x[i], "show");
+          if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+        }
+      }
+
+      function w3AddClass(element, name) {
+        var i, arr1, arr2;
+        arr1 = element.className.split(" ");
+        arr2 = name.split(" ");
+        for (i = 0; i < arr2.length; i++) {
+          if (arr1.indexOf(arr2[i]) == -1) {
+            element.className += " " + arr2[i];
+          }
+        }
+      }
+
+      function w3RemoveClass(element, name) {
+        var i, arr1, arr2;
+        arr1 = element.className.split(" ");
+        arr2 = name.split(" ");
+        for (i = 0; i < arr2.length; i++) {
+          while (arr1.indexOf(arr2[i]) > -1) {
+            arr1.splice(arr1.indexOf(arr2[i]), 1);
+          }
+        }
+        element.className = arr1.join(" ");
+      }
+
+      // Add active class to the current button (highlight it)
+      var btnContainer = document.getElementById("myBtnContainer");
+      var btns = btnContainer.getElementsByClassName("btn");
+      for (var i = 0; i < btns.length; i++) {
+        btns[i].addEventListener("click", function () {
+          var current = document.getElementsByClassName("active");
+          current[0].className = current[0].className.replace(" active", "");
+          this.className += " active";
+        });
+      }
+    </script>
+    <script>
+      /* When the user clicks on the button,
+  toggle between hiding and showing the dropdown content */
+      function myFunction() {
+        document.getElementById("myDropdown").classList.toggle("show");
+      }
+
+      function filterFunction() {
+        var input, filter, ul, li, a, i;
+        input = document.getElementById("myInput");
+        filter = input.value.toUpperCase();
+        div = document.getElementById("myDropdown");
+        a = div.getElementsByTagName("a");
+        for (i = 0; i < a.length; i++) {
+          txtValue = a[i].textContent || a[i].innerText;
+          if (txtValue.toUpperCase().indexOf(filter) > -1) {
+            a[i].style.display = "";
+          } else {
+            a[i].style.display = "none";
+          }
+        }
+      }
+    </script>
+  </body>
+</html>

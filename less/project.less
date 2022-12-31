@@ -1,0 +1,137 @@
+@color: linear-gradient(219.84deg, #081a25 4.14%, #081a25 44.22%);
+@primary-color: #ffffff;
+@seconder-color: #c4c4c4;
+@font-style-normal: normal;
+@font-weight-500: 500;
+@third-color: #e5e5e5;
+.project-header {
+  font-style: @font-style-normal;
+  font-weight: 700;
+  font-size: 46px;
+  line-height: 69px;
+  margin-top: 4rem;
+  color: @primary-color;
+}
+.project-bk {
+  background: @color-background;
+}
+.line-arow {
+  margin-left: 24rem;
+  margin-top: 2rem;
+}
+.imgs {
+  width: 32rem;
+  margin-top: 5rem;
+}
+.form-one {
+  margin-top: -20rem;
+  height: 53rem;
+}
+.contact-one {
+  padding-top: 7rem;
+  padding-left: 2rem;
+}
+.project-btn {
+  border-color: transparent;
+  text-align: center;
+  padding: 1rem 1.5rem;
+  background: @color-btn;
+  border-color: none;
+}
+.btn-div {
+  margin-top: 2rem;
+  text-align: center;
+  border-color: none;
+}
+.btn-par {
+  font-style: @font-style-normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 36px;
+  /* identical to box height */
+
+  text-align: center;
+
+  color: @primary-color;
+}
+.project-paragraph {
+  font-style: @font-style-normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 30px;
+  margin-top: -3rem; /* Linear */
+  background: linear-gradient(
+    98.03deg,
+    #be9230 -6.86%,
+    #deb65d 30.02%,
+    #daa839 113.9%,
+    #daa839 113.92%,
+    #daa93d 113.93%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+}
+.par-top {
+  margin-top: -10rem;
+}
+.input2 {
+  background: transparent;
+  border: none;
+  border-bottom: 3px solid #daa839;
+  padding: 2px 5px;
+  width: 94%;
+  height: 19px;
+}
+.form-control {
+  padding: 12;
+  display: block;
+  width: 93%;
+  height: calc(1.5em + 0.75rem + 2px);
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #495057;
+  background-color: transparent;
+  background-clip: padding-box;
+  border: 1px solid #daa839;
+  border-radius: 0.25rem;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+.img-arow-apt {
+  margin-left: 1rem;
+}
+// ===================Media Quires==========
+@media screen and (max-width: 960px) {
+  .line-arow {
+    display: none;
+    margin-left: 4rem;
+    margin-bottom: 13rem;
+  }
+  .project-paragraph {
+    margin-top: 12rem;
+  }
+  .form-one {
+    margin-top: 1rem;
+    height: 53rem;
+  }
+}
+@media (max-width: 767px) {
+  .imgs {
+    width: 27rem;
+    margin-top: 0rem;
+  }
+  .line-arow {
+    display: none;
+  }
+  .imgs {
+    width: 112%;
+    margin-top: -3px;
+    margin-left: -1rem;
+  }
+
+  .proj-header-about {
+    margin-top: 2rem;
+  }
+}

@@ -1,0 +1,608 @@
+//  @import "navbar.less";
+//  @import "project.less";
+//  @import "footer.less";
+//  @import "rent.less";
+@import "properties-details.less";
+@import "apartments.less";
+//  @import "sales.less";
+@import "style.less";
+@import "newslid.less";
+@color-grey: #e5e5e5;
+@font-style-normal: normal;
+@download-pdf: #293942;
+@color-btn: linear-gradient(
+  98.03deg,
+  #be9230 -6.86%,
+  #deb65d 30.02%,
+  #daa839 113.9%,
+  #daa839 113.92%,
+  #daa93d 113.93%
+);
+@color-btn-boxshadow:0px 10px 15px rgba(218, 168, 57, 0.27);
+@background-color: radial-gradient(
+  97.57% 210.75% at 0.9% 2.98%,
+  rgba(255, 255, 255, 0.4) 0%,
+  rgba(255, 255, 255, 0) 100%
+);
+body {
+  background: @color;
+}
+.show {
+  display: none;
+}
+.none{
+ 
+}
+.Properties {
+  font-family: "Poppins";
+  font-style: @font-style-normal;
+  font-weight: 600;
+  font-size: 46px;
+  line-height: 69px;
+  color: @primary-color;
+}
+.top {
+  margin-top: 40px;
+}
+.property-text {
+  font-family: "Poppins";
+  font-style: @font-style-normal;
+  font-weight: @font-weight-500;
+  font-size: 15px;
+  line-height: 27px;
+
+  color: @seconder-color;
+}
+
+//  ==========Our excellent properties============
+.image-1 {
+  // width: 660px;
+  // height: 596px;
+  width: 100%;
+  height: auto;
+  margin-top: 50px;
+}
+.bar {
+  width: 78px;
+  height: 9px;
+  margin-left: 15px;
+}
+.properties-our {
+  font-family: "Poppins";
+  font-style: @font-style-normal;
+  font-weight: 600;
+  font-size: 44px;
+  line-height: 69px;
+  color: @primary-color;
+}
+.properties-check {
+  font-family: "Poppins";
+  font-style: @font-style-normal;
+  font-weight: @font-weight-500;
+  font-size: 15px;
+  line-height: 27px;
+  color: @seconder-color;
+}
+.margin {
+  margin-top: 50px;
+}
+.color {
+  background: radial-gradient(
+      97.57% 210.75% at 0.9% 2.98%,
+      rgba(255, 255, 255, 0.08) 0%,
+      rgba(255, 255, 255, 0) 100%
+    )
+    /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
+  backdrop-filter: blur(21px);
+}
+.properties-two {
+  height: 387px;
+  width: 358px;
+}
+.properties-three {
+  height: 387px;
+  width: 358px;
+  margin-top: 17rem;
+}
+.properties-four {
+  height: 387px;
+  width: 358px;
+  margin-top:12rem;
+}
+.arrow {
+  width: auto;
+  height: auto;
+  margin-left: 122px;
+  margin-bottom: 15px;
+}
+.forsale,
+.number {
+  font-family: "Poppins";
+  font-style: @font-style-normal;
+  font-weight: @font-weight-500;
+  font-size: 35px;
+  line-height: 54px;
+  padding-top: 15px;
+  color: @primary-color;
+}
+.sale-text,
+.text {
+  font-family: "Poppins";
+  font-style: @font-style-normal;
+  font-weight: @font-weight-500;
+  font-size: 15px;
+  line-height: 27px;
+  color: @seconder-color;
+}
+.btn-details {
+  margin-top: 0.2rem;
+  border-color: transparent;
+  background: @color-btn;
+  padding: 10px 65px 0px 65px;
+  box-shadow: @color-btn-boxshadow;
+}
+.btn-home {
+  font-weight: @font-weight-500;
+  font-family: "Poppins";
+  font-style: @font-style-normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  padding-top: 5px;
+  color: @primary-color;
+}
+.propsimg {
+  max-width: 36rem;
+  height: auto;
+  display: block;
+}
+
+//    ====media quries for our excellent properties====
+@media (max-width: 768px) {
+  .properties-three,
+  .properties-four {
+    margin-top: 50px;
+  }
+  .show {
+    display: none;
+  }
+}
+.center {
+  text-align: center;
+  font-family: "Poppins";
+  font-style: @font-style-normal;
+  font-weight: @font-weight-500;
+  font-size: 35px;
+  line-height: 54px;
+  padding-top: 15px;
+  color: @primary-color;
+}
+.prop-logo {
+  margin-top: 10px;
+}
+.ourClents {
+  width: 140px;
+  height: 73px;
+  background: @primary-color;
+  border-radius: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 15px;
+}
+.logos {
+  margin-top: 30px;
+}
+//    ====media quries for ourCliets-logos====
+@media (min-width: 768px) and (max-width: 992px) {
+  .log {
+    width: 65px;
+  }
+  .ourClents {
+    width: 80px;
+    height: 66px;
+  }
+}
+@media (min-width: 450px) and(max-width:768px) {
+  .log {
+    width: 65px;
+  }
+  .ourClents {
+    width: 80px;
+    height: 66px;
+  }
+  .bar {
+    margin-top: 2rem;
+  }
+}
+@media (max-width: 450px) {
+  .ourClents {
+    width: 53px;
+    height: 50px;
+  }
+  .log {
+    width: 46px;
+  }
+
+  .project-header {
+    font-size: 32px;
+    line-height: 58px;
+}
+}
+@media (min-width: 992px) and(max-width:1200px) {
+  .log {
+    width: 71px;
+  }
+  .ourClents {
+    width: 108px;
+    height: 67px;
+  }
+}
+//    ====Apartments====
+.apartment {
+  font-family: "Poppins";
+  font-style: @font-style-normal;
+  font-weight: @font-weight-500;
+  font-weight: 600;
+  margin-top: 4rem;
+  font-size: 47px;
+  line-height: 69px;
+  color: @primary-color;
+}
+.apartment-one {
+  width: 494px;
+  height: 540px;
+}
+.apartment-two {
+  width: 370px;
+  height: @font-weight-500;
+  margin-top: 100px;
+}
+.apartment-three {
+  width: 345px;
+  height: @font-weight-500;
+  margin-top: 100px;
+}
+
+.leftarrow {
+  background: linear-gradient(100.58deg, #474747 81.37%, #222222 156.51%);
+  width: 49px;
+  height: 47px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  left: -13rem;
+  top: 4rem;
+}
+.rightarrow {
+  background: #daa839;
+  width: 49px;
+  height: 47px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  left: -12rem;
+  top: 4rem;
+}
+#apartment-contain .rightarrow {
+  background: #daa839;
+  width: 49px;
+  height: 47px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  left: -3rem;
+  top: 3.3rem;
+}
+#apartment-contain .leftarrow {
+  background: linear-gradient(100.58deg, #474747 81.37%, #222222 156.51%);
+  width: 49px;
+  height: 47px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  left: -4rem;
+  top: 3.3rem;
+}
+.additional-line {
+  margin-left: 32rem;
+  position: relative;
+  top: 6rem;
+  width: 30rem;
+}
+.wrapArrows {
+  // float: right;
+  // display: flex;
+  position: relative;
+  top: 3rem;
+  right: 2rem;
+}
+.sold {
+  font-family: "Poppins";
+  font-style: @font-style-normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 30px;
+  text-align: center;
+  color: @primary-color;
+}
+.apartment-imageOne{
+width: 100%;
+height: 32rem;
+}
+.apartment-imageTwo{
+  width: 100%;
+  height: 28rem;
+}
+.apartment-imageThree{
+  width: 100%;
+  height: 28rem;
+}
+@media(max-width: 767px){
+  .apartment-imageTwo,.apartment-imageThree{
+    width: 100%;
+    height: 24rem;
+  }
+  .apartment-imageOne{
+    height: 28rem;
+  }
+  .img-header-bul {
+    font-size: 17px;
+  }
+}
+.btn-sold {
+  // background: @btn-sold;
+  width: 169px;
+  height: 50px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 14px;
+  position: relative;
+  top: 97px;
+  border: none;
+  z-index: 1;
+}
+
+//   =================MiniDetails =============
+.flex {
+  display: flex;
+}
+.sold{
+  margin-top: -59.8rem;
+}
+.filter {
+  font-family: "Poppins";
+  font-style: @font-style-normal;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 36px;
+  color: @primary-color;
+  margin-right: 25px;
+  margin-top: 12px;
+}
+.bedRoom {
+  font-family: "Poppins";
+  font-style: @font-style-normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 28px;
+  color: @primary-color;
+  margin-top: 2rem;
+}
+.balcony {
+  font-family: "Poppins";
+  font-style: @font-style-normal;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 28px;
+  color: @color-grey;
+  margin-top: 1rem;
+}
+.text-properties {
+  font-family: "Poppins";
+  font-style: @font-style-normal;
+  font-weight: @font-weight-500;
+  font-size: 17px;
+  line-height: 27px;
+  color: @seconder-color;
+}
+.btn-download {
+  border-color: transparent;
+  background: @download-pdf;
+  padding: 9px 8px 0px 11px;
+  font-weight: @font-weight-500;
+  font-family: "Poppins";
+  font-style: @font-style-normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  color: @primary-color;
+}
+.btn-view {
+  margin-top: 0.2rem;
+  border-color: transparent;
+  background: @color-btn;
+  padding: 10px 75px 0px 75px;
+  box-shadow: @color-btn-boxshadow;
+  margin-left: 2rem;
+  margin-top: 3.2rem;
+}
+.download {
+  margin-top: 3rem;
+}
+.btn-pdf {
+  font-weight: @font-weight-500;
+  font-family: "Poppins";
+  font-style: @font-style-normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  color: @primary-color;
+}
+.properties-image1 {
+  width: 100%;
+  height: auto;
+}
+.column-two {
+  margin-top: 6rem;
+}
+.column-one {
+  margin-top: 7rem;
+}
+//==============privacy policy ==============
+.Privacy-policy {
+  font-family: "Poppins";
+  font-style: @font-style-normal;
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 28px;
+  padding-top: 7rem;
+  padding-left: 6rem;
+  color: @primary-color;
+}
+.privacy-text {
+  font-family: "Poppins";
+  font-style: @font-style-normal;
+  font-weight: @font-weight-500;
+  font-size: 16px;
+  line-height: 29px;
+  padding-top: 5rem;
+  padding-left: 5rem;
+  padding-bottom: 4rem;
+  color: @primary-color;
+}
+.background {
+  background: @background-color;
+  backdrop-filter: blur(21px);
+  margin-top: 5rem;
+}
+.privacy-building {
+  z-index: 1;
+  width: 100%;
+  height: auto;
+  position: relative;
+}
+.privacy-div {
+  margin-left: -6rem;
+}
+//============== media queries for privacy policy ==============
+@media (max-width: 440px) {
+  .Privacy-policy {
+    padding-top: 3rem;
+    padding-left: 0rem;
+    font-size: 46px;
+  }
+  .privacy-text {
+    padding-left: 1rem;
+    padding-top: 3rem;
+  }
+  .privacy-div {
+    margin-left: 0;
+  }
+  .background {
+    margin-top: 3rem;
+  }
+  .sold {
+    margin-top: -24.4rem;
+    width: 7rem;
+}
+}
+@media (min-width: 441px) and (max-width: 767px) {
+  .Privacy-policy {
+    padding-top: 3rem;
+    padding-left: 0rem;
+  }
+  .privacy-text {
+    padding-left: 1rem;
+    padding-top: 3rem;
+  }
+  .privacy-div {
+    margin-left: 0;
+  }
+.sold {
+    margin-top: -40rem;
+    width: 10rem;
+}
+}
+@media (min-width: 768px) and(max-width:991px) {
+  .Privacy-policy {
+    font-size: 40px;
+    padding-left: 5rem;
+  }
+  .sold {
+    margin-top: -55.7rem;
+}
+}
+// ==============contact us============
+//   .contact-img{
+//     width: 100%;
+// height: 378px;
+// margin-top: 2rem;
+// margin-bottom: 3rem;
+//   }
+
+@media (max-width: 767px) {
+  .flex {
+    flex-direction: column-reverse;
+  }
+  .propsimg {
+    margin-top: 40px;
+    width: 100%;
+    height: auto;
+  }
+  // .img-one {
+  //   width: 15.9rem;
+  // }
+}
+//  new-index
+.img-subtitle {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 64px;
+  line-height: 96px;
+
+  color: #ffffff;
+}
+#Apartment-container .img-subtitle {
+  margin-top: 20px;
+  font-family: "Poppins";
+  font-style: @font-style-normal;
+  font-weight: 700;
+  font-size: 64px;
+  line-height: 96px;
+  color: @primary-color;
+}
+.spans {
+  color: yellow;
+}
+.wrapphotos{
+  float: right; 
+  z-index: 2;
+  position: relative;
+  right: 2rem;
+  top: 3rem;
+}
+@media(max-width: 767px){
+  .btn-view {
+    padding: 12px 60px 1px 55px;
+    margin-left: 0;
+  }
+  .wrapphotos{
+    right: 0rem;
+    top: -0.5rem;
+  }
+  .apar-arrow{
+    width:3rem;
+    height:3rem;
+  }
+}

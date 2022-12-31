@@ -1,0 +1,198 @@
+.about-col {
+  background: radial-gradient(97.57% 210.75% at 0.9% 2.98%, rgba(255, 255, 255, 0.4) 0%, rgba(255, 255, 255, 0) 100%);
+  backdrop-filter: blur(21px);
+}
+.About-line {
+  margin-top: 11rem;
+  width: 6rem;
+  height: 0.3rem;
+}
+.Aboutus-Header {
+  margin-top: 1rem;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 46px;
+  line-height: 69px;
+  /* identical to box height */
+  color: #ffffff;
+}
+.Aboutus-paragraph {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 27px;
+  color: #c4c4c4;
+}
+.About-img {
+  margin-top: 10rem;
+  width: 28.9rem;
+  height: 53rem;
+  margin-left: 12.3rem;
+}
+.Team-Headers {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 46px;
+  line-height: 69px;
+  text-align: center;
+  margin-top: 5rem;
+  color: #ffffff;
+}
+.Team-paragraphs {
+  margin-left: 0rem;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 28px;
+  text-align: center;
+  color: #c4c4c4;
+}
+#Make-different .Header {
+  margin-top: 1rem;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 44px;
+  line-height: 69px;
+  /* identical to box height */
+  color: #ffffff;
+}
+#Make-different .content {
+  margin-top: 10rem;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 27px;
+  color: #c4c4c4;
+}
+#Make-different .different-line {
+  margin-top: 8rem;
+  width: 6rem;
+  height: 0.3rem;
+}
+#Makes-container {
+  margin-top: 5rem;
+}
+#Makes-container .content {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 39px;
+  color: #c4c4c4;
+  margin-top: 3rem;
+}
+#Makes-container .makes-us-col-1 {
+  background: radial-gradient(97.57% 210.75% at 0.9% 2.98%, rgba(255, 255, 255, 0.4) 0%, rgba(255, 255, 255, 0) 100%);
+  backdrop-filter: blur(21px);
+}
+#Makes-container .makes-col-img {
+  width: 4rem;
+  padding-top: 1rem;
+}
+#Makes-container .makes-h2 {
+  font-size: 2rem;
+}
+.footer-social-media {
+  padding-inline: 2rem;
+}
+@media screen and (max-width: 960px) {
+  .About-imgs {
+    margin-left: -1rem;
+    width: 27rem;
+    height: 29rem;
+    margin-top: 1rem;
+  }
+  .About-img {
+    display: none;
+  }
+  .About-line {
+    margin-top: 2rem;
+  }
+  #Make-different .different-line {
+    margin-top: 4rem;
+  }
+  #Make-different .content {
+    margin-top: 2rem;
+  }
+  #Makes-container .makes-us-col-1 {
+    margin-top: 1rem;
+  }
+  .Team-Headers {
+    font-size: 40px;
+    margin-top: 2rem;
+  }
+}
+@media screen and (min-width: 1500px) {
+  .desktop-view {
+    margin-left: -15rem;
+  }
+  .About-img {
+    margin-left: 36.6rem;
+  }
+  .desktop-view-two {
+    margin-left: -15rem;
+  }
+  #Make-different .content {
+    margin-left: 6rem;
+  }
+  .desktop-view-three {
+    margin-inline: -15rem;
+  }
+  .desktop-view-four {
+    margin-inline: -15rem;
+  }
+}
+.name-main {
+  text-align: center;
+}
+.slid-names {
+  font-size: 1rem;
+  color: red;
+}
+.slid-subtitles {
+  font-size: 1rem;
+}
+.makes-h2s {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 36px;
+  color: #ffffff;
+  margin-left: 2rem;
+  margin-top: 1rem;
+}
+.makes-cols {
+  margin-left: 2rem;
+  padding-top: 1rem;
+}
+.About-slid-par {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 42px;
+  margin-left: 2rem;
+  color: #c4c4c4;
+}
+@media screen and (max-width: 960px) {
+  .new-ep {
+    margin-left: 1rem;
+  }
+  .lines {
+    display: none;
+  }
+}
+.new-img {
+  width: 100%;
+  padding: 1.2rem;
+}
+.lines {
+  margin-top: 2rem;
+  margin-left: 23rem;
+}
+.lines-tow {
+  width: 12rem;
+  height: 0.2rem;
+  margin-left: 1rem;
+  margin-top: 1.9rem;
+}
